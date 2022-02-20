@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EvilInsult" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="somebody insult" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXn-ju-MPb">
+                                <rect key="frame" x="20" y="124" width="374" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="CLo-eK-Phe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="MYS-cP-0cn">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkg-sG-Rxu">
+                                <rect key="frame" x="20" y="735" width="374" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="lN8-e8-rdd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="I need INSULT">
+                                    <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="systemGray6Color"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="getInsultAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HNV-Vn-gdX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't do it" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNI-Me-feM">
+                                <rect key="frame" x="214" y="260" width="180" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="ZiZ-Sy-pIW"/>
+                                    <constraint firstAttribute="height" constant="60" id="uz8-Dz-qP3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="SXn-ju-MPb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="7RU-3b-mrC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SXn-ju-MPb" secondAttribute="trailing" constant="20" id="8oH-Us-CAU"/>
+                            <constraint firstItem="MYS-cP-0cn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9FU-jP-m2F"/>
+                            <constraint firstAttribute="trailing" secondItem="zkg-sG-Rxu" secondAttribute="trailing" constant="20" id="aNL-3C-L9t"/>
+                            <constraint firstItem="dNI-Me-feM" firstAttribute="top" secondItem="SXn-ju-MPb" secondAttribute="bottom" id="jeT-gt-G9F"/>
+                            <constraint firstItem="MYS-cP-0cn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mWF-rS-9tt"/>
+                            <constraint firstItem="zkg-sG-Rxu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nB8-g8-mZ6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dNI-Me-feM" secondAttribute="trailing" constant="20" id="ohA-tV-s3L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zkg-sG-Rxu" secondAttribute="bottom" constant="50" id="vL4-jG-uLg"/>
+                            <constraint firstItem="SXn-ju-MPb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vcD-dN-4bV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exuseLabel" destination="dNI-Me-feM" id="QRa-mP-Doc"/>
+                        <outlet property="insultLabel" destination="SXn-ju-MPb" id="wLN-vE-Eei"/>
+                        <outlet property="loadingIndicator" destination="MYS-cP-0cn" id="GB9-Oq-9gC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
